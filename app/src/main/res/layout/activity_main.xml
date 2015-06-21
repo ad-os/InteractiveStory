@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_title"
+        android:id="@+id/titleImageView"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:contentDescription="Signals from Mars"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/startButton"
+        android:text="Start your adventure"
+        style="@style/WhiteButton"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/nameEditText"
+        android:layout_above="@id/startButton"
+        android:hint="Enter your name to begin"
+        android:maxLength="30" />
+
+</RelativeLayout>

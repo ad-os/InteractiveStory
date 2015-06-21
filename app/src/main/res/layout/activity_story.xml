@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.interactivestory.ui.StoryActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/storyImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/page0" />
+
+    <TextView
+        android:id="@+id/storyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/storyImageView"
+        android:paddingTop="15dp"
+        android:paddingRight="30dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="You deftly land your ship near where the distress signal originated. You didn&apos;t notice anything strange on your fly-by, but there is a cave in front of you. Behind you is an abandoned rover from the early 21st century.&quot;,"
+        android:paddingLeft="30dp"
+        android:paddingBottom="30dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/choiceButton2"
+        android:layout_alignParentBottom="true"
+        style="@style/WhiteButton" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/choiceButton1"
+        android:layout_above="@id/choiceButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@style/WhiteButton"/>
+
+</RelativeLayout>
